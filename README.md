@@ -1,35 +1,37 @@
-## A Brief Introduction to Programming with R
+# A Brief Introduction to Programming with R
 
 This course introduces students to the fundamental practices of programming with R in the context of economic research. The course briefly covers basic theoretical concepts and teaches basic skills in how to make use of the high-level programming language and statistical computing environment R. Examples and exercises are focused on data handling and data analysis tasks. The overall aim is to give students a solid overview of basic programming in R, and how they can potentially make use of R during their studies and research in economics.
 
-### Markdown
+## Course Structure
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Part I: Background & tools
+- Why R? Why programming?
+- The tools: [R](https://www.r-project.org/), (RStudio/Posit](https://posit.co/), [Nuvolos](https://nuvolos.cloud/).
 
-```markdown
-Syntax highlighted code block
+### Part II: First steps in R, core concepts
+- First steps in R: R as a calculator, variables.
+- Basic programming concepts in R.
+- R objects and data structures.
+- R functions for basic statistics.
 
-# Header 1
-## Header 2
-### Header 3
+### Part III: Working with data in R
+- Loading/importing data.
+- Visualizing data with R/ggplot.
+- Basic data analysis with R.
 
-- Bulleted
-- List
+## Schedule
 
-1. Numbered
-2. List
+|Time|Content|
+|--:|:--|
+|09:15 - 10:00|Introduction, Background, Tools|
+|10:00 - 10:15|Break, support with installations|
+|10:15 - 11:00|Exercises, first steps with R|
+|11:00 - 11:15|Break, Q&A|
+|11:15 - 12:00|First steps with R, concepts|
+|12:00 - 13:15|Lunch break (individually)|
+|13:15 - 14:00|Exercises|
+|14:00 - 14:15|Break, Q&A|
+|14:15 - 15:30|Working with data|
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JLDC/intro-to-r/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Credits
+All credits for the contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
