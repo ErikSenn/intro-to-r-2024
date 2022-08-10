@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## A Brief Introduction to Programming with R
 
-You can use the [editor on GitHub](https://github.com/JLDC/intro-to-r/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This course introduces students to the fundamental practices of programming with R in the context of economic research. The course briefly covers basic theoretical concepts and teaches basic skills in how to make use of the high-level programming language and statistical computing environment R. Examples and exercises are focused on data handling and data analysis tasks. The overall aim is to give students a solid overview of basic programming in R, and how they can potentially make use of R during their studies and research in economics.
 
 ### Markdown
 
