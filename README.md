@@ -2,6 +2,10 @@
 
 This course introduces students to the fundamental practices of programming with R in the context of economic research. The course briefly covers basic theoretical concepts and teaches basic skills in how to make use of the high-level programming language and statistical computing environment R. Examples and exercises are focused on data handling and data analysis tasks. The overall aim is to give students a solid overview of basic programming in R, and how they can potentially make use of R during their studies and research in economics.
 
+## Course Files
+
+[Download ZIP file with the necessary course data and files.](https://github.com/JLDC/intro-to-r/archive/refs/heads/master.zip)
+
 ## Course Structure
 
 ### Part I: Background & tools
