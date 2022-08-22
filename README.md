@@ -10,7 +10,7 @@ This course introduces students to the fundamental practices of programming with
 
 ### Part I: Background & tools
 - Why R? Why programming?
-- The tools: [R](https://www.r-project.org/), [RStudio/Posit](https://posit.co/), [Nuvolos](https://nuvolos.cloud/).
+- The tools: [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/)/[Posit](https://posit.co/).
 
 ### Part II: First steps in R, core concepts
 - First steps in R: R as a calculator, variables.
