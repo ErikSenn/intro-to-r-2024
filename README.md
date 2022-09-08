@@ -6,6 +6,11 @@ This course introduces students to the fundamental practices of programming with
 
 [Download ZIP file with the necessary course data and files.](https://github.com/JLDC/intro-to-r/archive/refs/heads/master.zip)
 
+## Course Slides
+- [Part I: Background / Tools](https://www.jldc.ch/slides/intro_to_r_1.html)
+- [Part II: First Steps and Basic Concepts](https://www.jldc.ch/slides/intro_to_r_2.html)
+- [Part III: Working with Data](https://www.jldc.ch/slides/intro_to_r_3.html)
+
 ## Course Structure
 
 ### Part I: Background & tools
