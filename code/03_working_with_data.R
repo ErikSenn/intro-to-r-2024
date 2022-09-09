@@ -139,7 +139,6 @@ ggplot(data = swiss, aes(x = Education, y = Examination)) +
      geom_smooth(method = 'lm') +
      facet_wrap(~Religion) +
      theme_dark()
-ggsave("../../Paper/Figures/paintings_1m.png")
 
 
 
