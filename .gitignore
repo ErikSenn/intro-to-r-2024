@@ -37,3 +37,6 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+table.tex
+image.png
+intro-to-r-2023.Rproj

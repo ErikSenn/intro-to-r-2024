@@ -140,6 +140,13 @@ ggplot(data = swiss, aes(x = Education, y = Examination)) +
      facet_wrap(~Religion) +
      theme_dark()
 
+## Save image
+ggplot(data = swiss, aes(x = Education, y = Examination)) + 
+  geom_point(aes(color = Agriculture)) +
+  geom_smooth(method = 'lm') +
+  facet_wrap(~Religion) +
+  theme_dark()
+ggsave("image.png", units = "px", width = 1200, height = 800)
 
 
 ## -------------------------------------------------------------------------------------------------
@@ -210,8 +217,6 @@ summary(model_fit2)
 ## library(stargazer)
 
 
-
-
 ## ---- warning=FALSE-------------------------------------------------------------------------------
 
 # print regression results as text
@@ -227,4 +232,31 @@ if (knitr::is_latex_output()) {
 } else {
      stargazer(model_fit, model_fit2, type = "html")
 }
+
+## ---- print table to file -----------------------------------------------------------------------
+write(stargazer(model_fit, model_fit2, type = "latex",
+          header = FALSE, table.placement = "H"), file = "table.tex") 
+
+
+# CHATGPT-generated code -------------------------------------------------------------------------
+# prompt was: 
+# Write a funny "thank you" message for an R-class in the introduction week of an economics master using R-code.
+# Also, print an ASCII art "R" in the console.
+
+funny_message <- "Thanks for joining our R-class!\nRemember, in economics, they say 'supply and demand,' but in R, we say 'install and library'!"
+ascii_art <- "
+RRRRRRR  
+RR    RR 
+RR    RR 
+RRRRRRR  
+RR   RR  
+RR    RR  
+RR     RR 
+"
+
+cat(funny_message, "\n\n")
+cat(ascii_art)
+
+
+
 

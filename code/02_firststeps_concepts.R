@@ -64,15 +64,26 @@ pi
 
 
 ## -------------------------------------------------------------------------------------------------
-# vector to be summed up
-numbers <- c(1,2.1,3.5,4.8,5)
-# initiate total
-total_sum <- 0
-# number of iterations
-n <- length(numbers)
-# start loop
-for (i in 1:n) {
-     total_sum <- total_sum + numbers[i]
+# loops
+numbers <- c(72, 42, 150, 13, 36, 19) # Define a vector of numbers
+
+# Specify the loop: iterate over index
+total_sum <- 0 # Initialize the total sum at zero
+n_iter = length(numbers)
+for (i in 1:n_iter) {
+  total_sum <- total_sum + numbers[i] # Increment the total sum by the number 'n'
+}
+
+# check result
+total_sum
+# compare with result of sum() function
+sum(numbers)
+
+
+# Alternative - Specify the loop: iterate over numbers
+total_sum <- 0 # Initialize the total sum at zero
+for (n in numbers) {
+  total_sum <- total_sum + n # Increment the total sum by the number 'n'
 }
 
 # check result
@@ -192,10 +203,12 @@ mylist
 
 ## -------------------------------------------------------------------------------------------------
 # with the element's name
-mylist$numbers
-mylist["numbers"]
+my_list["numbers"] 
+my_list[["numbers"]] # Access the content of the element directly
+my_list$numbers # Access the content of the element directly
 # via the index
-mylist[1]
+my_list[1] 
+my_list[[1]] # Access the content of the element directly
 
 
 ## -------------------------------------------------------------------------------------------------
