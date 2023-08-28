@@ -42,8 +42,11 @@ This course introduces students to the fundamental practices of programming with
 |14:00 - 14:15|Break, Q&A|
 |14:15 - 15:30|Working with data|
 
+## Examination
+There is no examination.
+
 ## Credits
 Credits for the contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
-Credits for the slides go to [Jonathan Chassot](https://jldc.ch/)
+Credits for the slides go to [Jonathan Chassot](https://jldc.ch/).
 
 
