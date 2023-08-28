@@ -4,18 +4,18 @@ This course introduces students to the fundamental practices of programming with
 
 ## Course Files
 
-[Download ZIP file with the necessary course data and files.](https://github.com/JLDC/intro-to-r/archive/refs/heads/master.zip)
+[Download ZIP file with the necessary course data and files.](https://github.com/DrWatson42/intro-to-r/archive/refs/heads/master.zip)
 
 ## Course Slides
-- [Part I: Background / Tools](https://www.jldc.ch/slides/intro_to_r_1.html)
-- [Part II: First Steps and Basic Concepts](https://www.jldc.ch/slides/intro_to_r_2.html)
-- [Part III: Working with Data](https://www.jldc.ch/slides/intro_to_r_3.html)
+- [Part I: Background / Tools](https://www.jldc.ch/slides/2023_intro_to_r_1.html)
+- [Part II: First Steps and Basic Concepts](https://www.jldc.ch/slides/2023_intro_to_r_2.html)
+- [Part III: Working with Data](https://www.jldc.ch/slides/2023_intro_to_r_3.html)
 
 ## Course Structure
 
 ### Part I: Background & tools
 - Why R? Why programming?
-- The tools: [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/)/[Posit](https://posit.co/).
+- The tools: [R](https://www.r-project.org/), [RStudio/Posit](https://posit.co/).
 
 ### Part II: First steps in R, core concepts
 - First steps in R: R as a calculator, variables.
@@ -43,4 +43,7 @@ This course introduces students to the fundamental practices of programming with
 |14:15 - 15:30|Working with data|
 
 ## Credits
-All credits for the contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
+Credits for the contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
+Credits for the slides go to [Jonathan Chassot](https://jldc.ch/)
+
+
