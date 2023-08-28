@@ -44,6 +44,6 @@ This course introduces students to the fundamental practices of programming with
 
 ## Credits
 Credits for the contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
-Credits for the slides go to [Jonathan Chassot](https://jldc.ch/)
+Credits for the slides go to [Jonathan Chassot](https://jldc.ch/).
 
 
