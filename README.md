@@ -34,9 +34,9 @@ This course introduces students to the fundamental practices of programming with
 |--:|:--|
 |09:15 - 10:00|Introduction, Background, Tools|
 |10:00 - 10:15|Break, support with installations|
-|10:15 - 11:00|Exercises, first steps with R|
+|10:15 - 11:00|First steps with R|
 |11:00 - 11:15|Break, Q&A|
-|11:15 - 12:00|First steps with R, concepts|
+|11:15 - 12:00|Exercises|
 |12:00 - 13:30|Lunch break|
 |13:30 - 14:15|Working with data|
 |14:15 - 14:30|Break, Q&A|
