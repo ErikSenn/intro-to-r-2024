@@ -61,18 +61,18 @@ pi
 
 
 
-
-
 ## -------------------------------------------------------------------------------------------------
 # loops
 numbers <- c(72, 42, 150, 13, 36, 19) # Define a vector of numbers
 
 # Specify the loop: iterate over index
 total_sum <- 0 # Initialize the total sum at zero
-n_iter = length(numbers)
+n_iter <- length(numbers)
 for (i in 1:n_iter) {
   total_sum <- total_sum + numbers[i] # Increment the total sum by the number 'n'
+  print(paste("Iteration:", i,"total_sum:",total_sum)) # for demonstration
 }
+print(paste("Final result:", total_sum)) # for demonstration
 
 # check result
 total_sum
