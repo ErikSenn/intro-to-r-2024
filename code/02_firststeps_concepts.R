@@ -1,20 +1,10 @@
 ## -------------------------------------------------------------------------------------------------
 # a simle integer vector
 a <- c(10,22,33,22,40)
-
-# give names to vector elements
-names(a) <- c("Andy", "Betty", "Claire", "Daniel", "Eva")
 a
 
 # indexing either via number of vector element (start count with 1)
-# or by element name
 a[3]
-a["Claire"]
-
-# Inspect the object you are working with
-class(a) # returns the class(es) of the object
-str(a) # returns the structure of the object ("what is in variable a?")
-
 
 
 ## -------------------------------------------------------------------------------------------------
