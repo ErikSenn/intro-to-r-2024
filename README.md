@@ -4,7 +4,7 @@ This course introduces students to the fundamental practices of programming with
 
 ## Course Files
 
-[Download ZIP file with the necessary course data and files.](https://github.com/DrWatson42/intro-to-r-2023/archive/refs/heads/master.zip)
+[Download ZIP file with the necessary course data and files.](https://github.com/ErikSenn/intro-to-r-2023/archive/refs/heads/master.zip)
 
 ## Course Slides
 - [Part I: Background / Tools](https://www.jldc.ch/slides/2023_intro_to_r_1.html)
@@ -34,13 +34,13 @@ This course introduces students to the fundamental practices of programming with
 |--:|:--|
 |09:15 - 10:00|Introduction, Background, Tools|
 |10:00 - 10:15|Break, support with installations|
-|10:15 - 11:00|Exercises, first steps with R|
+|10:15 - 11:00|First steps with R|
 |11:00 - 11:15|Break, Q&A|
-|11:15 - 12:00|First steps with R, concepts|
+|11:15 - 12:00|Exercises|
 |12:00 - 13:30|Lunch break|
-|13:30 - 14:15|Exercises|
+|13:30 - 14:15|Working with data|
 |14:15 - 14:30|Break, Q&A|
-|14:30 - 15:30|Working with data|
+|14:30 - 15:30|Exercises|
 
 ## Examination
 There is no examination.
