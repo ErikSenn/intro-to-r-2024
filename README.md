@@ -45,8 +45,11 @@ This course introduces students to the fundamental practices of programming with
 ## Examination
 There is no examination.
 
+## Lecturers
+[Jeremia Stalder](https://github.com/JeremiaStalder) and [Erik-Jan Senn](https://github.com/ErikSenn)
+
 ## Credits
-Credits for the contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
-Credits for the slides go to [Jonathan Chassot](https://jldc.ch/).
+Credits for a previous version contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
+Credits for a previous version of the slides go to [Jonathan Chassot](https://jldc.ch/).
 
 
