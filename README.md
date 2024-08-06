@@ -26,7 +26,7 @@ This course introduces students to the fundamental practices of programming with
 ### Part III: Working with data in R
 - Loading/importing data.
 - Visualizing data with R/ggplot.
-- Basic data analysis with R.
+- Basic data analysis with R/dplyr.
 
 ## Schedule
 
