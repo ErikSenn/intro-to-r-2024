@@ -4,7 +4,7 @@ This course introduces students to the fundamental practices of programming with
 
 ## Course Files
 
-[Download ZIP file with the necessary course data and files.](https://github.com/ErikSenn/intro-to-r-2023/archive/refs/heads/master.zip)
+[Download ZIP file with the necessary course data and files.](https://github.com/ErikSenn/intro-to-r-2024/archive/refs/heads/master.zip)
 
 ## Course Slides
 - [Part I: Background / Tools](https://www.jldc.ch/slides/2023_intro_to_r_1.html)
