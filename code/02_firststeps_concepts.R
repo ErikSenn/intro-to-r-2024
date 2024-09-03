@@ -1,16 +1,16 @@
 ## -------------------------------------------------------------------------------------------------
-# a simle integer vector
+# a simple integer vector
 a <- c(10,22,33,22,40)
 a
 
 # indexing either via number of vector element (start count with 1)
 a[3]
-
+a[3:5]
 
 ## -------------------------------------------------------------------------------------------------
 # basic arithmetic 
 2+2
-sum_result <- 2+2
+sum_result <- 2+3
 sum_result
 sum_result -2
 4*5
