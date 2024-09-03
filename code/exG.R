@@ -1,19 +1,21 @@
-# Exercise G: Multiples of 3 and 5
+# Exercise G: LM Function
 # Sample Solution
 
-N <- 100
-# Quick mathematical solution
-3 * sum(1:floor(N/3)) + 5 * sum(1:floor(N/5)) - 15 * sum(1:floor(N/15))
+# Implement you own "lm" function that returns the estimated coefficients for a linear regression model using OLS.
+# Test your function by comparing to the "lm" function.
+# Hint: Remember the closed form matrix solution to OLS: beta_hat = (X'X)^(-1) X'y.
+# The "solve" function might help!
 
-# Loop solution
-total <- 0
-for (i in 1:N) {
-  # Check if i is divisible by 3
-  if ((i %% 3) == 0) {
-    total <- total + i
-    # If not, check if it is divisible by 5
-  } else if ((i %% 5) == 0) {
-    total <- total + i
-  }
+own_ols <- function(X,y){
+  solve(t(X)%*%X)%*%t(X)%*%y # (X'X)^(-1) X'y
 }
-total
+
+# input data for function as matrix
+X = as.matrix( swiss[,c("Education","Agriculture","Examination")])
+X = cbind(1,X) #add constant
+y = swiss$Fertility
+
+own_ols(X,y)
+
+# compare to lm
+lm(Fertility ~ Education + Agriculture  +Examination, data = swiss) 

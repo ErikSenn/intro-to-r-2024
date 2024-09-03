@@ -16,3 +16,5 @@ fibonacci_sequence[2] <- 1
 for (i in 3:30) {
   fibonacci_sequence[i] <- fibonacci_sequence[i-1] + fibonacci_sequence[i-2]
 }
+
+fibonacci_sequence

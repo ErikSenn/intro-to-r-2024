@@ -1,28 +1,8 @@
-# Exercise H: Prime numbers
+# Exercise H: Accounting for Heteroscedasticity
 # Sample Solution
 
-# Define a function to see if a number is prime
-is_prime <- function(x) {
-  if (x == 1) {
-    return(FALSE)
-  } else if (x == 2) {
-    return(TRUE)
-  } else {
-    for (i in 2:floor(sqrt(x))) {
-      if ((x %% i) == 0) {
-        return(FALSE)
-      }
-    }
-  }
-  return(TRUE)
-}
+# Change the standard errors to account for heteroscedasticity (white standard errors).
+# Hint: Use the packages "lmtest" and "sandwich".
 
-get_prime_numbers_up_to <- function(n) {
-  primes <- c()
-  for (i in 1:n) {
-    if (is_prime(i)) {
-      primes <- append(primes, i)
-    }
-  }
-  return(primes)
-}
+robust_test <- coeftest(model, vcov = vcovHC(model, type = "HC0"))
+print(robust_test)
