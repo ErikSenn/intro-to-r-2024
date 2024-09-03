@@ -10,15 +10,9 @@ str(swiss)
 head(swiss)
 
 
-
-
-
-
 ## ----eval=FALSE-----------------------------------------------------------------------------------
 ## # install the package
 ## install.packages("readxl")
-
-
 
 
 ## ----eval=FALSE-----------------------------------------------------------------------------------
@@ -27,8 +21,6 @@ library(readxl)
 ## 
 ## # import data from a spreadsheet
 swiss_imported <- read_excel("data/swiss.xlsx")
-
-
 
 
 ## ----eval=FALSE-----------------------------------------------------------------------------------
@@ -41,8 +33,6 @@ swiss_imported <- read_excel("data/swiss.xlsx")
 ## # read the data
 #swiss_imported <- read_spss("data/swiss.sav")
 ## 
-
-
 
 
 ## ----echo=TRUE, warning=FALSE, message=FALSE------------------------------------------------------
@@ -63,10 +53,8 @@ swiss$Religion[50 < swiss$Catholic] <- 'Catholic'
 swiss$Religion <- as.factor(swiss$Religion)
 
 
-
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
 ggplot(data = swiss, aes(x = Education, y = Examination))
-
 
 
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
@@ -81,7 +69,6 @@ ggplot(data = swiss, aes(x = Education, y = Examination)) +
      facet_wrap(~Religion)
 
 
-
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
 ggplot(data = swiss, aes(x = Education, y = Examination)) + 
      geom_point() +
@@ -89,7 +76,6 @@ ggplot(data = swiss, aes(x = Education, y = Examination)) +
      facet_wrap(~Religion)
 
 
-
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
 ggplot(data = swiss, aes(x = Education, y = Examination)) + 
      geom_point() +
@@ -97,13 +83,11 @@ ggplot(data = swiss, aes(x = Education, y = Examination)) +
      facet_wrap(~Religion)
 
 
-
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
 ggplot(data = swiss, aes(x = Education, y = Examination)) + 
      geom_point(aes(color = Agriculture)) +
      geom_smooth(method = 'lm') +
      facet_wrap(~Religion)
-
 
 
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
@@ -114,14 +98,12 @@ ggplot(data = swiss, aes(x = Education, y = Examination)) +
      coord_flip()
 
 
-
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
 ggplot(data = swiss, aes(x = Education, y = Examination)) + 
      geom_point(aes(color = Agriculture)) +
      geom_smooth(method = 'lm') +
      facet_wrap(~Religion) +
      theme(legend.position = "bottom", axis.text=element_text(size=12) ) 
-
 
 
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
@@ -132,13 +114,13 @@ ggplot(data = swiss, aes(x = Education, y = Examination)) +
      theme_minimal()
 
 
-
 ## ----echo=TRUE, out.width="85%", fig.width=6,fig.height=2.8---------------------------------------
 ggplot(data = swiss, aes(x = Education, y = Examination)) + 
      geom_point(aes(color = Agriculture)) +
      geom_smooth(method = 'lm') +
      facet_wrap(~Religion) +
      theme_dark()
+
 
 ## Save image
 ggplot(data = swiss, aes(x = Education, y = Examination)) + 
@@ -160,12 +142,10 @@ mean(a)
 median(a)
 
 
-
 ## ---- echo=TRUE-----------------------------------------------------------------------------------
 range(a)
 var(a)
 sd(a)
-
 
 
 ## -------------------------------------------------------------------------------------------------
@@ -176,7 +156,6 @@ sample <- rnorm(n, mean = 10, sd = 2)
 
 # Test H0: mean of population = 10 
 t.test(sample, mu = 10)
-
 
 
 ## -------------------------------------------------------------------------------------------------
@@ -202,7 +181,6 @@ model_fit <- lm(Examination~Education, data = swiss)
 summary(model_fit)
 
 
-
 ## -------------------------------------------------------------------------------------------------
 # multiple linear regression
 # estimate coefficients
@@ -211,32 +189,82 @@ model_fit2 <- lm(Examination~Education + Catholic + Agriculture, data = swiss)
 summary(model_fit2)
 
 
-
 ## ----eval=FALSE-----------------------------------------------------------------------------------
 ## # load packages
+## library(modelsummary)
 ## library(stargazer)
 
 
 ## ---- warning=FALSE-------------------------------------------------------------------------------
 
 # print regression results as text
-stargazer(model_fit, model_fit2, type = "text")
-
+modelsummary(list("Model 1" = model_fit, "Model 2" = model_fit2), output = "latex")
 
 ## ---- results='asis', warning=FALSE---------------------------------------------------------------
 # conditional on the output format of the whole document,
 # generate and render a HTML or a LaTeX table.
 if (knitr::is_latex_output()) {
-     stargazer(model_fit, model_fit2, type = "latex",
-               header = FALSE, table.placement = "H")
+  modelsummary(list("Model 1" = model_fit, "Model 2" = model_fit2), output = "latex")
 } else {
-     stargazer(model_fit, model_fit2, type = "html")
+  stargazer(model_fit, model_fit2, type = "html")
 }
 
 ## ---- print table to file -----------------------------------------------------------------------
-write(stargazer(model_fit, model_fit2, type = "latex",
-          header = FALSE, table.placement = "H"), file = "table.tex") 
+write(modelsummary(list("Model 1" = model_fit, 
+                        "Model 2" = model_fit2), 
+                   output = "latex"), 
+      file = "table.tex")  
 
+
+## A Brief Introduction to dplyr -------------------------------------------
+## library(dplyr)
+
+# The Pipe Operator -------------------------------------------------------
+
+# Create a pipeline
+swiss |>
+  filter(Education > 10) |>
+  mutate(Religion = ifelse(Catholic > 50, 'Catholic', 'Protestant')) |>
+  mutate(Religion = as.factor(Religion)) |> 
+  group_by(Religion) |>
+  summarize(mean_education = mean(Education)) |>
+  arrange(desc(mean_education)) |>
+  head()
+
+
+
+# Using dplyr -------------------------------------------------------------
+
+# Load data
+data(swiss)
+
+# Select columns
+swiss |>
+  select(Education, Examination, Agriculture) |> head()
+
+# Filter rows
+swiss |>
+  filter(Education > 10) |> head()
+
+# Create new column
+swiss_updated <- swiss |>
+  mutate(Religion = ifelse(Catholic > 50, 'Catholic', 'Protestant')) |>
+  mutate(Religion = as.factor(Religion))
+
+swiss_updated |> head()
+
+# Summarize data
+swiss |>
+  summarize(mean_education = mean(Education)) |> head()
+
+# Arrange rows
+swiss |>
+  arrange(desc(Education)) |> head()
+
+# Group and summarize data
+swiss_updated |>
+  group_by(Religion) |>
+  summarize(mean_education = mean(Education)) |> head()
 
 # CHATGPT-generated code -------------------------------------------------------------------------
 # prompt was: 
