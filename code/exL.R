@@ -1,6 +1,8 @@
+# Exercise L: Working with data
+# Sample Solution
+
 # Required Libraries
 library(ggplot2)
-library(lmtest)
 
 # 1. Load the dataset swiss.csv or call data(swiss). 
 data(swiss)

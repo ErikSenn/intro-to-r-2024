@@ -1,9 +1,5 @@
-# A Brief Introduction to Programming with R
-# Part II: First Steps and Basic Concepts
-
-##################################
-# Exercise F: Fibonacci Sequence #
-##################################
+# Exercise F: Fibonacci Sequence
+# Sample Solution
 
 # initialize the empty vector
 fibonacci_sequence <- c(rep(NA, 30))

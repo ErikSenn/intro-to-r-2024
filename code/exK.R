@@ -1,5 +1,6 @@
-# Exercise K: Fibonacci Matrix
+# Exercise K: Matrix Fibonacci
 # Sample Solution
+
 library(expm)
 
 fibo <- function(n) {
