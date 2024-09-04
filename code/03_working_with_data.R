@@ -133,7 +133,7 @@ ggsave("image.png", units = "px", width = 1200, height = 800)
 
 ## -------------------------------------------------------------------------------------------------
 # initiate sample
-a <- c(10,22,33, 22, 40)
+a <- c(10, 22, 33, 22, 40)
 names(a) <- c("Andy", "Betty", "Claire", "Daniel", "Eva")
 
 # compute the mean
@@ -151,6 +151,7 @@ sd(a)
 ## -------------------------------------------------------------------------------------------------
 # define size of sample
 n <- 100
+
 # draw the random sample from a normal distribution with mean 10 and sd 2
 sample <- rnorm(n, mean = 10, sd = 2)
 
@@ -191,8 +192,8 @@ summary(model_fit2)
 
 ## ----eval=FALSE-----------------------------------------------------------------------------------
 ## # load packages
-## library(modelsummary)
-## library(stargazer)
+library(modelsummary)
+library(stargazer)
 
 
 ## ---- warning=FALSE-------------------------------------------------------------------------------
@@ -210,10 +211,9 @@ if (knitr::is_latex_output()) {
 }
 
 ## ---- print table to file -----------------------------------------------------------------------
-write(modelsummary(list("Model 1" = model_fit, 
-                        "Model 2" = model_fit2), 
-                   output = "latex"), 
-      file = "table.tex")  
+modelsummary(list("Model 1" = model_fit, 
+                  "Model 2" = model_fit2), 
+             output = "table.tex")
 
 
 ## A Brief Introduction to dplyr -------------------------------------------
