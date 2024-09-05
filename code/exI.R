@@ -1,19 +1,28 @@
-# Exercise I: Multiples of 3 and 5
+# Exercise I: Prime numbers
 # Sample Solution
 
-N <- 100
-# Quick mathematical solution
-3 * sum(1:floor(N/3)) + 5 * sum(1:floor(N/5)) - 15 * sum(1:floor(N/15))
-
-# Loop solution
-total <- 0
-for (i in 1:N) {
-  # Check if i is divisible by 3
-  if ((i %% 3) == 0) {
-    total <- total + i
-    # If not, check if it is divisible by 5
-  } else if ((i %% 5) == 0) {
-    total <- total + i
+# Define a function to see if a number is prime
+is_prime <- function(x) {
+  if (x == 1) {
+    return(FALSE)
+  } else if (x == 2) {
+    return(TRUE)
+  } else {
+    for (i in 2:floor(sqrt(x))) {
+      if ((x %% i) == 0) {
+        return(FALSE)
+      }
+    }
   }
+  return(TRUE)
 }
-total
+
+get_prime_numbers_up_to <- function(n) {
+  primes <- c()
+  for (i in 1:n) {
+    if (is_prime(i)) {
+      primes <- append(primes, i)
+    }
+  }
+  return(primes)
+}

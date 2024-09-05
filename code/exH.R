@@ -1,8 +1,19 @@
-# Exercise H: Accounting for Heteroscedasticity
+# Exercise H: Multiples of 3 and 5
 # Sample Solution
 
-# Change the standard errors to account for heteroscedasticity (white standard errors).
-# Hint: Use the packages "lmtest" and "sandwich".
+N <- 100
+# Quick mathematical solution
+3 * sum(1:floor(N/3)) + 5 * sum(1:floor(N/5)) - 15 * sum(1:floor(N/15))
 
-robust_test <- coeftest(model, vcov = vcovHC(model, type = "HC0"))
-print(robust_test)
+# Loop solution
+total <- 0
+for (i in 1:N) {
+  # Check if i is divisible by 3
+  if ((i %% 3) == 0) {
+    total <- total + i
+    # If not, check if it is divisible by 5
+  } else if ((i %% 5) == 0) {
+    total <- total + i
+  }
+}
+total

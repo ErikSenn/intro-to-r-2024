@@ -1,28 +1,16 @@
-# Exercise J: Prime numbers
+# Exercise J: Fibonacci Sequence
 # Sample Solution
 
-# Define a function to see if a number is prime
-is_prime <- function(x) {
-  if (x == 1) {
-    return(FALSE)
-  } else if (x == 2) {
-    return(TRUE)
-  } else {
-    for (i in 2:floor(sqrt(x))) {
-      if ((x %% i) == 0) {
-        return(FALSE)
-      }
-    }
-  }
-  return(TRUE)
+# initialize the empty vector
+fibonacci_sequence <- c(rep(NA, 30))
+
+# fill in the starting values of the series
+fibonacci_sequence[1] <- 0
+fibonacci_sequence[2] <- 1
+
+# create the for-loop for the remainding Fibonacci numbers
+for (i in 3:30) {
+  fibonacci_sequence[i] <- fibonacci_sequence[i-1] + fibonacci_sequence[i-2]
 }
 
-get_prime_numbers_up_to <- function(n) {
-  primes <- c()
-  for (i in 1:n) {
-    if (is_prime(i)) {
-      primes <- append(primes, i)
-    }
-  }
-  return(primes)
-}
+fibonacci_sequence
