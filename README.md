@@ -49,7 +49,7 @@ There is no examination.
 [Jeremia Stalder](https://github.com/JeremiaStalder) and [Erik-Jan Senn](https://github.com/ErikSenn)
 
 ## Credits
-Credits for a previous version contents of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
+Credits for a previous version of the course go to [Prof. Ph.D. Ulrich Matter](https://umatter.github.io/).
 Credits for a previous version of the slides go to [Jonathan Chassot](https://jldc.ch/).
 
 
